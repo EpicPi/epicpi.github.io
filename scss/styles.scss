@@ -293,7 +293,6 @@ footer {
 }
 
 .social-center {
-    text-align: center;
 
     ul {
         margin: 5px 0 0 0;
@@ -1001,14 +1000,14 @@ footer {
 // Collapse timeline
 @media only screen and (max-width: 750px) {
 
-    .experience-timeline {
+    .experience-timeline-left {
         &:before, &:after {
             left: 23px;
         }
 
     }
 
-    .vtimeline-date {
+    .vtimeline-date-left {
         width: auto;
         text-align: left;
         position: relative;
@@ -1017,12 +1016,36 @@ footer {
         margin-left: 70px;
     }
 
-    .vtimeline-icon {
+    .vtimeline-icon-left {
         margin-left: 0;
     }
 
-    .vtimeline-content {
+    .vtimeline-content-left {
         margin-left: 70px;
+    }
+
+    .experience-timeline-right {
+        &:before, &:after {
+            right: 23px;
+        }
+
+    }
+
+    .vtimeline-date-right {
+        width: auto;
+        text-align: right;
+        position: relative;
+        margin-bottom: 15px;
+        display: block;
+        margin-right: 70px;
+    }
+
+    .vtimeline-icon-right {
+        margin-right: 0;
+    }
+
+    .vtimeline-content-right {
+        margin-right: 70px;
     }
 
 }
