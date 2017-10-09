@@ -118,7 +118,7 @@ body {
                 margin: 0 0 15px 0;
             }
 
-            p {
+            p, ul{
                 color: $text;
                 font-size: 0.9em;
                 margin: 0;
@@ -503,7 +503,7 @@ footer {
     }
 }
 
-.experience-timeline {
+.experience-timeline-left {
     margin: 30px auto 0 auto;
     position: relative;
     max-width: 1000px;
@@ -533,7 +533,7 @@ footer {
     }
 }
 
-.vtimeline-content {
+.vtimeline-content-left {
     margin-left: 350px;
     background: #fff;
     border: 1px solid #e6e6e6;
@@ -563,14 +563,14 @@ footer {
     }
 }
 
-.vtimeline-point {
+.vtimeline-point-left {
     position: relative;
     display: block;
     vertical-align: top;
     margin-bottom: 30px;
 }
 
-.vtimeline-icon {
+.vtimeline-icon-left {
     position: relative;
     color: #fff;
     width: 50px;
@@ -588,11 +588,108 @@ footer {
     }
 }
 
-.vtimeline-date {
+.vtimeline-date-left {
     width: 260px;
     text-align: right;
     position: absolute;
     left: 0;
+    top: 10px;
+    font-weight: 300;
+    color: #374054;
+}
+
+/*
+*/
+.experience-timeline-right {
+    margin: 30px auto 0 auto;
+    position: relative;
+    max-width: 1000px;
+
+    &:before {
+        position: absolute;
+        content: '';
+        top: 0;
+        bottom: 0;
+        right: 303px;
+        left: auto;
+        height: 100%;
+        width: 3px;
+        background: $base-color;
+        z-index: 0;
+    }
+
+    &:after {
+        position: absolute;
+        content: '';
+        width: 3px;
+        height: 40px;
+        background: $base-color;
+        background: linear-gradient(to bottom, $base-color, rgba($base-color, 0));
+        top: 100%;
+        right: 303px;
+    }
+}
+
+.vtimeline-content-right {
+    margin-right: 350px;
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    padding: 15px;
+    border-radius: 3px;
+    text-align: left;
+
+    h3 {
+        font-size: 1.5em;
+        font-weight: 300;
+        color: $heading;
+        display: inline-block;
+        margin: 0;
+    }
+
+    h4 {
+        font-size: 1.2em;
+        font-weight: 300;
+        color: #7e8890;
+        margin: 0 0 15px 0;
+    }
+
+    p {
+        color: $text;
+        font-size: 0.9em;
+        margin: 0;
+    }
+}
+
+.vtimeline-point-right {
+    position: relative;
+    display: block;
+    vertical-align: top;
+    margin-bottom: 30px;
+}
+
+.vtimeline-icon-right {
+    position: relative;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    background: $base-color;
+    border-radius: 50%;
+    float: right;
+    z-index: 99;
+    margin-right: 280px;
+
+    i {
+        display: block;
+        font-size: 2em;
+        margin-top: 10px;
+    }
+}
+
+.vtimeline-date-right {
+    width: 260px;
+    text-align: left;
+    position: absolute;
+    right: 0;
     top: 10px;
     font-weight: 300;
     color: #374054;

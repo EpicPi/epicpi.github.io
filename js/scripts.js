@@ -51,26 +51,51 @@
     });
 
     // Create timeline
-    $('.experience-timeline').each(function() {
+    $('.experience-timeline-left').each(function() {
 
         $this = $(this); // Store reference to this
         $userContent = $this.children('div'); // user content
 
         // Create each timeline block
         $userContent.each(function() {
-            $(this).addClass('vtimeline-content').wrap('<div class="vtimeline-point"><div class="vtimeline-block"></div></div>');
+            $(this).addClass('vtimeline-content-left').wrap('<div class="vtimeline-point-left"><div class="vtimeline-block-left"></div></div>');
         });
 
         // Add icons to each block
-        $this.find('.vtimeline-point').each(function() {
-            $(this).prepend('<div class="vtimeline-icon"><i class="fa fa-map-marker"></i></div>');
+        $this.find('.vtimeline-point-left').each(function() {
+            $(this).prepend('<div class="vtimeline-icon-left"><i class="fa fa-map-marker"></i></div>');
         });
 
         // Add dates to the timeline if exists
-        $this.find('.vtimeline-content').each(function() {
+        $this.find('.vtimeline-content-left').each(function() {
             var date = $(this).data('date');
             if (date) { // Prepend if exists
-                $(this).parent().prepend('<span class="vtimeline-date">'+date+'</span>');
+                $(this).parent().prepend('<span class="vtimeline-date-left">'+date+'</span>');
+            }
+        });
+
+    });
+        // Create timeline
+    $('.experience-timeline-right').each(function() {
+
+        $this = $(this); // Store reference to this
+        $userContent = $this.children('div'); // user content
+
+        // Create each timeline block
+        $userContent.each(function() {
+            $(this).addClass('vtimeline-content-right').wrap('<div class="vtimeline-point-right"><div class="vtimeline-block-right"></div></div>');
+        });
+
+        // Add icons to each block
+        $this.find('.vtimeline-point-right').each(function() {
+            $(this).prepend('<div class="vtimeline-icon-right"><i class="fa fa-map-marker"></i></div>');
+        });
+
+        // Add dates to the timeline if exists
+        $this.find('.vtimeline-content-right').each(function() {
+            var date = $(this).data('date');
+            if (date) { // Prepend if exists
+                $(this).parent().prepend('<span class="vtimeline-date-right">'+date+'</span>');
             }
         });
 
