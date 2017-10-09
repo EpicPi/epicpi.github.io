@@ -96,7 +96,7 @@ body {
 
 // No JS styles
 .no-js {
-    #experience-timeline {
+    .experience-timeline {
         > div {
             background: $background;
             padding: 10px;
@@ -460,9 +460,9 @@ footer {
 }
 
 /*
-    --------------------------------
-    ----- 6. Experience Styles -----
-    --------------------------------
+    -----------------------------------
+    - 6. Experience/leadership Styles -
+    -----------------------------------
 */
 
 #experience {
@@ -473,9 +473,37 @@ footer {
     h2 {
         color: $heading;
     }
+    p, ul {
+        margin: 0;
+        color: $text;
+        font-size: 0.9em;
+    }
+
+    ul {
+        padding: 0 0 0 15px;
+    }
 }
 
-#experience-timeline {
+#leadership {
+    padding: 50px 15px;
+    text-align: center;
+    border-bottom: 1px solid $border;
+
+    h2 {
+        color: $heading;
+    }
+    p, ul {
+        margin: 0;
+        color: $text;
+        font-size: 0.9em;
+    }
+
+    ul {
+        padding: 0 0 0 15px;
+    }
+}
+
+.experience-timeline {
     margin: 30px auto 0 auto;
     position: relative;
     max-width: 1000px;
@@ -844,7 +872,7 @@ footer {
 // Collapse timeline
 @media only screen and (max-width: 750px) {
 
-    #experience-timeline {
+    .experience-timeline {
         &:before, &:after {
             left: 23px;
         }
