@@ -182,6 +182,11 @@ header {
             color: $base-color;
             text-decoration: none;
         }
+
+        &:visited {
+            color: $base-color;
+            text-decoration: none;
+        }
     }
 
     &.active {
