@@ -170,10 +170,10 @@ header {
         display: block;
         color: $base-color;
         padding: 10px;
+        text-decoration: none;
 
         &:hover {
             color: $base-color-hover;
-            text-decoration: none;
             background: #eee;
             border-radius: 4px;
         }
